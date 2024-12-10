@@ -1,0 +1,46 @@
+.bar-chart-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+.bar {
+    width: 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    transition: height 0.5s ease, background-color 0.3s ease-in-out; /* Smooth animation */
+}
+.bar:hover {
+    transform: scale(1.1);
+    background-color: #0056b3; /* Slightly darker blue */
+    cursor: pointer;
+}
+
+.bar.pivot {
+    background-color: #ff6347; /* Highlight pivot */
+}
+
+.bar.smaller {
+    background-color: #32cd32; /* Highlight smaller elements */
+}
+
+.bar.equal {
+    background-color: #ffa500; /* Highlight equal elements */
+}
+
+.bar.greater {
+    background-color: #6a5acd; /* Highlight greater elements */
+}
+.bar.max {
+    border: 2px solid gold; /* Highlight maximum */
+}
+
+.bar.min {
+    border: 2px solid crimson; /* Highlight minimum */
+}

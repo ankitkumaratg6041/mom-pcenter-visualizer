@@ -1,0 +1,62 @@
+.p-center-container {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+.p-center-heading{
+    text-align: center;
+    margin: 140px auto 10px auto;
+    /* border: 1px solid red; */
+}
+
+.controls {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.p-center-input{
+    font-size: 1.5em;
+}
+input{
+    margin-left: 10px;
+    font-size: 1.2em;
+}
+
+.controls button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.controls button.active {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.visualization {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    width: 1000px;
+    height: 600px;
+    position: relative;
+    margin: 25px auto;
+    display: flex;
+}
+
+circle {
+    transition: all 0.3s ease;
+}
+
+circle:hover {
+    transform: scale(0.5);
+}
+
+rect {
+    transition: all 0.3s ease;
+}
+body{
+    color: white;
+}

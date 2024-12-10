@@ -1,0 +1,172 @@
+body{
+  background-color: hsl(260, 100%, 5%);
+  margin: 0;
+  /* background: url(assets/pic.jpg); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container{
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  margin: 100px auto;
+  color: white;
+}
+h1{
+  font-size: 3em;
+}
+input[type="text"], button{
+  font-size: 1.5em;
+  padding: 5px;
+  border-radius: 5px;
+  color: hsl(0, 0%, 24%);
+  /* font-weight: bold; */
+  margin: auto 5px;
+  border: 1px solid;
+}
+button{
+  color: white;
+  background-color: rgb(1, 128, 1);
+  padding: 5px 20px;
+  cursor: pointer;
+}
+button:hover{
+  background-color: rgb(1, 83, 1);
+}
+#delete{
+  background-color: rgb(201, 10, 10);
+  font-size: 1em;
+  padding: auto 10px;
+  margin-left: 40px;
+}
+#delete:hover{
+  background-color: rgb(148, 1, 1);
+}
+
+ul{
+  /* border: 1px solid white; */
+  margin: 50px auto;
+  list-style-type: none;
+  padding: 10px 20px;
+  /* background-color: white; */
+}
+li{
+  list-style-type: none;
+  font-size: 1.2em;
+  background-color: white;
+  color: hsl(0, 0%, 10%);
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 10px auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#gesture{
+  border: 1px solid black;
+  background-color: rgb(36, 134, 226);
+  margin-left: 5px;
+  padding: 2px;
+  cursor: pointer;
+}
+#gesture:hover{
+  background-color: rgb(10, 88, 161);
+}
+
+.clock-container{
+  margin: 50% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  border: 1px solid black;
+  width: 100vw;
+}
+.clock{
+  color: white;
+  font-size: 5em;
+  font-family: monospace;
+  font-weight: bold;
+  text-shadow: 3px 3px 5px hsla(0, 0%, 0%, 0.75);
+
+}
+
+.inputArray{
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  padding: 10px;
+}
+.momInput{
+  width: 70%;
+}
+.submitNumbers{
+  margin: 15px auto;
+}
+
+.result{
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  padding: 10px 25px;
+}
+.userArrHeading{
+  font-size: 1.5em;
+  color: white;
+}
+p,span{
+  font-family: Arial, sans-serif;
+  font-size: 1.5em;
+  margin: auto;
+  color: white;
+}
+
+.matrix-container {
+  display: flex; /* Displays the sublists as columns */
+  gap: 20px; /* Adds space between columns */
+  margin: auto;
+  flex-direction: column;
+  width: 40%;
+  justify-content: center;
+}
+
+.sublists-alignment{
+  display: flex;
+}
+
+.sublist-column {
+  display: flex;
+  flex-direction: column; /* Makes numbers in each sublist stack vertically */
+  border: 1px solid #ccc; /* Optional: Add a border around each column */
+  padding: 10px; /* Optional: Add padding inside each column */
+  text-align: center; /* Center-align numbers */
+  background-color: #f9f9f9; /* Optional: Add a background color */
+  border-radius: 5px;
+}
+
+.matrix-item {
+  font-family: monospace;
+  color: black;
+  margin: 5px 0; /* Adds space between numbers within a column */
+}
+
+.highlight-median {
+  color: red; /* Change text color for median */
+  font-weight: bold; /* Make the median bold */
+  background-color: yellow; /* Optional background color for median */
+}
